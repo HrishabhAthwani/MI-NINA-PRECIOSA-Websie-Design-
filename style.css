@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: "Product Sans";
+}
+
+#full {
+    height: 100%;
+    width: 100%;
+    background-color: #323738;
+    /* background: linear-gradient(#323738, #2B3031, bottom); */
+    display: flex;
+}
+
+#left {
+    height: 100%;
+    width: 60%;
+    /* background-color: blue; */
+    color: rgb(247, 247, 247);
+    animation: reveal 1s cubic-bezier(0.19, 1, 0.22, 1) 1.5s both;
+}
+
+#ltop {
+    width: 100%;
+    height: 35%;
+    /* background-color: #FDF7F7; */
+    display: flex;
+}
+
+#ltleft {
+    height: 100%;
+    width: 40%;
+    /* background-color: purple; */
+    text-transform: uppercase;
+    padding: 30px 20px;
+}
+
+#ltleft h1 {
+    font-size: 18px;
+    /* color: rgb(37, 37, 37); */
+    word-spacing: 7px;
+    letter-spacing: 1px;
+    opacity: 0.8;
+    font-weight: 700;
+}
+
+#ltright {
+    height: 100%;
+    width: 60%;
+    background-image: url(https://images.unsplash.com/photo-1609505849504-405b3d1f4678?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1402&q=80);
+    background-size: cover;
+    background-position: center;
+}
+
+#lmiddle {
+    width: 100%;
+    height: 50%;
+    /* background-color: #FDF7F7; */
+    display: flex;
+}
+
+#lmleft {
+    height: 100%;
+    width: 65%;
+    /* background-color: blue; */
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: #2D3132; */
+}
+
+#lmleft h5 {
+    opacity: 0.5;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#lmleft h1 {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+#lmleft p {
+    font-size: 12px;
+    font-weight: 700;
+    opacity: 0.6;
+    letter-spacing: 1.5px;
+    font-family: "Montserrat";
+}
+
+#collection {
+    width: 220px;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    /* background-color: blue; */
+}
+
+#line {
+    height: 2px;
+    width: 50px;
+    background-color: rgb(224, 224, 224);
+    margin-left: 8px;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+
+#arrow {
+    margin-left: -10px;
+    font-size: 20px;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+
+#collection:hover #arrow {
+    margin-left: -10px;
+}
+
+#collection:hover #line {
+    margin-left: -20px;
+}
+
+#collection:hover #sc {
+    margin-left: 20px;
+}
+
+#lmleft a {
+    color: rgb(158, 158, 158);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    opacity: 0.5;
+    display: inline-block;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+
+#lmright {
+    height: 100%;
+    width: 35%;
+    /* background-image: url(https://images.unsplash.com/photo-1608312149553-d31a9cbc5224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1400&q=80); */
+    background-image: url(/portrait-girl-removebg-preview.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#lbottom {
+    width: 100%;
+    height: 15%;
+    background-color: #FDF7F7;
+    display: flex;
+    justify-content: space-between;
+}
+
+#lbleft {
+    width: 30%;
+    height: 100%;
+    /* background-color: tomato; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#lbleft a {
+    text-decoration: none;
+    color: #323738;
+    text-transform: capitalize;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+.line {
+    height: 2px;
+    width: 0%;
+    background-color: #3e4344;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+
+.grp:hover .line {
+    width: 100%;
+}
+
+#lbright {
+    width: 30%;
+    height: 100%;
+    /* background-color: #323738; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.arr {
+    height: 100%;
+    width: 50%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: rgb(19, 19, 19);
+    font-size: 25px;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+.arr:hover {
+    cursor: pointer;
+    background-color: #262a2b;
+    color: #fff;
+}
+
+#right {
+    height: 100%;
+    width: 40%;
+    background-image: url(https://images.unsplash.com/photo-1609505848912-b7c3b8b4beda?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1402&q=80);
+    background-size: cover;
+    background-position: center;
+    animation: reveal 1s cubic-bezier(0.19, 1, 0.22, 1) 1.5s both;
+}
+
+#ovr {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    animation: curtain 2s cubic-bezier(0.19, 1, 0.22, 1) 0.5s both;
+}
+
+@keyframes curtain {
+    from {
+        height: 100%;
+        top: 0%;
+    }
+    to {
+        height: 0;
+        top: 0%;
+    }
+}
+
+@keyframes reveal {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
